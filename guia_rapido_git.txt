@@ -16,3 +16,7 @@ do repositório do GitHub)
 git push --set-upstream origin main
 *Toda vez que você abrir uma pasta ja criada você precisa fazer o push com git push --set-upstream origin main 
 antes de fazer apenas o git push 
+
+Quando foi adicionar um arquivo que ja foi comitado no .gitignore precisa rodar esse comando: git rm -cached <pasta e 
+nome do arquivo> 
+Exemplo: git rm --cached projetos_c/Exercicios_pessoais/notas
