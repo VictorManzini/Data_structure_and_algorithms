@@ -1,0 +1,16 @@
+Tem aqui um guia rapido de como criar um novo repositório no Git e linkar no GitHub:
+
+GITHUB:
+Crie um repositório no GitHub com o nome da pasta cou do projeto. 
+Crie o repositório sem o README, LICENSE ou .gitignore, tudo isso será adicionado depois.
+Para adicnioar uma licença ao repositório, vai no GitHub e cria um arquivo novo, nomeie-o de LICENSE, 
+você vai ver pouco abaixo de onde você digitou o nome LICENSE um botão para adicionar uma licença.
+
+
+GIT:
+git init
+git add .
+git commit -m "primeiro commit"
+git remote add origin https://github.com/VictorManzini/nome-da-materia.git (aqui é do trocar a ulr para a ulr real
+do repositório do GitHub)
+git push --set-upstream origin main
