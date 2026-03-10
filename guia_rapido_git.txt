@@ -14,3 +14,5 @@ git commit -m "primeiro commit"
 git remote add origin https://github.com/VictorManzini/nome-da-materia.git (aqui é do trocar a ulr para a ulr real
 do repositório do GitHub)
 git push --set-upstream origin main
+*Toda vez que você abrir uma pasta ja criada você precisa fazer o push com git push --set-upstream origin main 
+antes de fazer apenas o git push 
