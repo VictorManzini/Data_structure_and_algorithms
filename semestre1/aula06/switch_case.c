@@ -43,7 +43,7 @@ int main(){
             printf("Aluno reprovado por media\n");
         }
         else if(presenca < 75 && media > 6){
-            printf("Aluno reprovao por presenca\n");
+            printf("Aluno reprovado por presenca\n");
         }
         else if(presenca < 75 && presenca >=0){
             printf("Aluno reprovado\n");
