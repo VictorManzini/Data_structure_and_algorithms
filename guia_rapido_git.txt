@@ -20,3 +20,13 @@ antes de fazer apenas o git push
 Quando foi adicionar um arquivo que ja foi comitado no .gitignore precisa rodar esse comando: git rm -cached <pasta e 
 nome do arquivo> 
 Exemplo: git rm --cached projetos_c/Exercicios_pessoais/notas
+
+Branches: 
+Para criar e alternar para uma nova branch: git checkout -b nome-da-branch
+ou para versões do git acima da 2.23 usar git switch -c nome-da-branch
+Para apenas criar uma nova branch: git branch nome-da-branch
+Para alternar para umaa branch já existente: git checkout nome-da-branch
+Algumas recomendações: 
+1-Atualize a branch principal: git checkout main e git pull origin main.
+2-Crie e entre na nova branch: git push -u origin feature/nome-da-feature.
+3-Envie a branch para o repositório remoto: git push -u origin feature/nome-da-feature.
