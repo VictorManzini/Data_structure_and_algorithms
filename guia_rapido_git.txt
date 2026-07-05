@@ -16,6 +16,7 @@ do repositório do GitHub)
 git push --set-upstream origin main
 *Toda vez que você abrir uma pasta ja criada você precisa fazer o push com git push --set-upstream origin main 
 antes de fazer apenas o git push 
+Para fazer um commit sem comentários use o comando: git commit --allow-empty-message -m "" 
 
 Quando foi adicionar um arquivo que ja foi comitado no .gitignore precisa rodar esse comando: git rm -cached <pasta e 
 nome do arquivo> 
