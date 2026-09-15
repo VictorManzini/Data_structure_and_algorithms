@@ -23,9 +23,31 @@ int somatorio(int n){
     return soma;
 }
 
+long long potencia(int base, int exp){ // long ocupa 4 bytes na memoria | long long ocupa 8 bytes na memoria
+    // Caso Base
+    if(exp == 0){
+        return 1;
+    }
+    // Caso Recursivo
+    return base * potencia(base, exp -1);
+}
+
+int somaVetor(int v[], int n){
+    // Caso Base
+    if(n == 0){
+        return 0;
+    }
+    // Caso Recursivo
+    return v[n - 1] + somaVetor(v, n - 1);
+}
+
 int main(){
     //contador_regressivo(5);
-    int soma = somatorio(10);
-    printf("A soma do valor X ---> %d\n", soma);
+    //int soma = somatorio(10);
+    //printf("A soma do valor X ---> %d\n", soma);
+    //printf("O resultado da potencia ---> %lld.\n", potencia(2, 5));
+    int v[] = {10, 20, 30, 40, 50}; // vetor 
+    int n = sizeof(v) / sizeof(v[0]); // tamanho do vetor
+    printf("A soma do vetor v[] ---> %d\n", somaVetor(v, n));
     return 0;
 }
